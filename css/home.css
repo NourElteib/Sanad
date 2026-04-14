@@ -1,0 +1,104 @@
+/* home.css — Home Page Specific Styles */
+
+/* ── Feature Cards ── */
+.feature-card {
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  height: 100%;
+}
+.feature-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+
+.feature-card .feature-icon {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+.feature-card h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  color: var(--clr-text);
+}
+.feature-card p {
+  font-size: 0.88rem;
+  color: var(--clr-text-muted);
+  margin: 0;
+}
+
+/* ── Tips Grid ── */
+.tips-section { background: var(--clr-surface); }
+
+.tip-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--clr-border);
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition);
+  height: 100%;
+  background: var(--clr-surface);
+}
+.tip-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); }
+
+.tip-card-header {
+  padding: 1.25rem 1.25rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.tip-card-body { padding: 1rem 1.25rem 1.25rem; }
+.tip-card-body h4 { font-size: 1rem; font-weight: 700; margin-bottom: 0.35rem; }
+.tip-card-body p  { font-size: 0.85rem; color: var(--clr-text-muted); margin: 0; line-height: 1.65; }
+
+/* ── Daily Routine ── */
+.routine-section { background: linear-gradient(135deg, #faf8ff, #f0fdf5); }
+
+.routine-card {
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  height: 100%;
+  border: 1px solid var(--clr-border);
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition);
+}
+.routine-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+
+.routine-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.routine-card-header .time-icon {
+  font-size: 2rem;
+}
+.routine-card-header h3 {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.routine-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.routine-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.45rem 0;
+  font-size: 0.9rem;
+  color: var(--clr-text);
+  border-bottom: 1px dashed var(--clr-border);
+}
+.routine-list li:last-child { border-bottom: none; }
+.routine-list li::before {
+  content: '✦';
+  color: var(--clr-primary);
+  font-size: 0.65rem;
+  margin-top: 0.35rem;
+  flex-shrink: 0;
+}

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="الصحة النفسية - نصائح وموارد متخصصة لدعم الصحة النفسية لطالبات مدرسة قنا" />
+  <title>الصحة النفسية | منصة صحتي النفسية</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/mental-health.css" />
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav id="main-navbar" class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <div class="navbar-brand-logo">🌸</div>
+      <div>
+        <span class="navbar-brand-text">مدرسة قنا الفنية التجارية بنات</span>
+     
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMH" aria-label="قائمة التنقل">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMH">
+      <ul class="navbar-nav mx-auto gap-1">
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="index.html">الرئيسية</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="confidence.html">الثقة بالنفس</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="mental-health.html">الصحة النفسية</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="general-issues.html">قضايا عامة</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-custom" href="share.html">شاركينا</a></li>
+      </ul>
+      <a href="login.html" class="btn btn-admin ms-2">🔐 الإدارة</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero-section" aria-labelledby="mh-hero-title">
+  <div class="blob blob-1" style="background:var(--clr-secondary-light)" aria-hidden="true"></div>
+  <div class="blob blob-2" aria-hidden="true"></div>
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6 anim-fade-up">
+        <span class="hero-badge" style="background:var(--clr-secondary-light);color:#2a7d8c">🧠 صحة نفسية</span>
+        <h1 class="hero-title" id="mh-hero-title">
+          اعتني بصحتكِ<br />
+          <span>النفسية 💙</span>
+        </h1>
+        <p class="hero-subtitle">
+          صحتك النفسية بنفس أهمية صحتك الجسدية. تعلّمي كيف تعتنين بعقلك
+          ومشاعرك في كل يوم من أيام حياتك.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="share.html" class="btn-primary-custom">احكيلنا 💜</a>
+          <a href="#checklist-section" class="btn-secondary-custom">القائمة اليومية</a>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center anim-fade-up delay-2">
+        <div class="hero-illustration anim-float mx-auto" style="background:linear-gradient(135deg,var(--clr-secondary-light),var(--clr-primary-light),var(--clr-green-light))" aria-hidden="true">🧠</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT FILTER SECTION -->
+<section class="section-pad" style="background:var(--clr-surface)" aria-labelledby="filter-title">
+  <div class="container">
+
+    <div class="text-center mb-4" data-animate>
+      <h2 class="section-title" id="filter-title">مكتبة النصائح والموارد</h2>
+      <p class="section-subtitle mt-2">اختاري الموضوع الذي يهمّك</p>
+    </div>
+
+    <!-- Filter Pills -->
+    <div class="text-center mb-5" data-animate>
+      <div class="filter-pills-wrapper" role="tablist" aria-label="تصفية المحتوى">
+        <button class="filter-pill active" data-filter="all"        role="tab" aria-selected="true">الكل</button>
+        <button class="filter-pill"        data-filter="mental"     role="tab" aria-selected="false">الصحة النفسية</button>
+        <button class="filter-pill"        data-filter="confidence" role="tab" aria-selected="false">الثقة بالنفس</button>
+      </div>
+    </div>
+
+    <!-- Content Cards Grid -->
+    <div class="row g-4" id="content-cards-grid">
+
+      <!-- Card 1: mental -->
+      <div class="col-sm-6 col-lg-4 content-card-wrapper" data-category="mental" data-animate>
+        <article class="content-card">
+          <div class="content-card-img" style="background:linear-gradient(135deg,var(--clr-secondary-light),#d0f0f8)">💙</div>
+          <div class="content-card-body">
+            <span class="cat-pill cat-mental">الصحة النفسية</span>
+            <h5>حبي نفسك — البداية الحقيقية</h5>
+            <p>محبة الذات ليست أنانية، بل هي أساس صحتك النفسية. تعلّمي قبول نفسك بعيوبها وكمالاتها.</p>
+            <span class="card-date">📅 ١٤ أبريل ٢٠٢٥</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Card 2: mental -->
+      <div class="col-sm-6 col-lg-4 content-card-wrapper" data-category="mental" data-animate delay-1>
+        <article class="content-card">
+          <div class="content-card-img" style="background:linear-gradient(135deg,var(--clr-green-light),#c8ecd4)">🌿</div>
+          <div class="content-card-body">
+            <span class="cat-pill cat-mental">الصحة النفسية</span>
+            <h5>القلق وكيفية التعامل معه</h5>
+            <p>القلق استجابة طبيعية للضغوط. تعرّفي على أعراضه وأدوات إدارته بطرق علمية بسيطة.</p>
+            <span class="card-date">📅 ١٠ أبريل ٢٠٢٥</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Card 3: mental -->
+      <div class="col-sm-6 col-lg-4 content-card-wrapper" data-category="mental" data-animate delay-2>
+        <article class="content-card">
+          <div class="content-card-img" style="background:linear-gradient(135deg,var(--clr-accent-light),#fad4de)">😌</div>
+          <div class="content-card-body">
+            <span class="cat-pill cat-mental">الصحة النفسية</span>
+            <h5>النوم والصحة النفسية</h5>
+            <p>النوم الجيد يجدد عقلك ومشاعرك. اكتشفي عادات النوم الصحية التي تحمي توازنك النفسي.</p>
+            <span class="card-date">📅 ٧ أبريل ٢٠٢٥</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Card 4: confidence -->
+      <div class="col-sm-6 col-lg-4 content-card-wrapper" data-category="confidence" data-animate>
+        <article class="content-card">
+          <div class="content-card-img" style="background:linear-gradient(135deg,var(--clr-primary-light),#e0d9f7)">⭐</div>
+          <div class="content-card-body">
+            <span class="cat-pill cat-confidence">الثقة بالنفس</span>
+            <h5>قوّة الحديث الإيجابي مع الذات</h5>
+            <p>كلامك لنفسك يحدد مسار يومك. تعلّمي كيف تحولي الصوت الداخلي من عدو إلى حليف.</p>
+            <span class="card-date">📅 ٥ أبريل ٢٠٢٥</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Card 5: confidence -->
+      <div class="col-sm-6 col-lg-4 content-card-wrapper" data-category="confidence" data-animate delay-1>
+        <article class="content-card">
+          <div class="content-card-img" style="background:linear-gradient(135deg,var(--clr-yellow),#fef7d8)">🏆</div>
+          <div class="content-card-body">
+            <span class="cat-pill cat-confidence">الثقة بالنفس</span>
+            <h5>الفشل كمحطة لا نهاية</h5>
+            <p>كل شخصية ناجحة مرت بالفشل. الفرق هو كيف تنظرين إليه وما تتعلمينه منه.</p>
+            <span class="card-date">📅 ٣ أبريل ٢٠٢٥</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Card 6: mental -->
+      <div class="col-sm-6 col-lg-4 content-card-wrapper" data-category="mental" data-animate delay-2>
+        <article class="content-card">
+          <div class="content-card-img" style="background:linear-gradient(135deg,#f0fdf9,#c8f0e4)">🧘</div>
+          <div class="content-card-body">
+            <span class="cat-pill cat-mental">الصحة النفسية</span>
+            <h5>التأمل في خمس دقائق</h5>
+            <p>التأمل لا يحتاج ساعات. خمس دقائق يومياً من الهدوء الواعي تُحدث فرقاً حقيقياً.</p>
+            <span class="card-date">📅 ١ أبريل ٢٠٢٥</span>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DAILY CHECKLIST -->
+<section class="checklist-section section-pad" id="checklist-section" aria-labelledby="checklist-title">
+  <div class="container">
+    <div class="row justify-content-center" data-animate>
+      <div class="col-lg-8">
+
+        <div class="text-center mb-4">
+          <h2 class="section-title" id="checklist-title">قائمة يومية للتحقق</h2>
+          <p class="section-subtitle mt-2">ضعي علامة ✓ على ما حققتِه اليوم</p>
+        </div>
+
+        <div class="checklist-wrapper">
+          <div class="checklist-header">
+            <h3>✅ مهامي الصحية اليوم</h3>
+            <p>كل خطوة صغيرة تحتسب — كوني لطيفة مع نفسك</p>
+          </div>
+
+          <div class="checklist-body">
+
+            <!-- Items -->
+            <label class="checklist-item" for="task-water">
+              <span class="item-emoji">💧</span>
+              <div class="checklist-item-info">
+                <span class="item-title">شُرب الماء الكافي</span>
+                <span class="item-desc">اشربي ٨ أكواب ماء على الأقل</span>
+              </div>
+              <input type="checkbox" id="task-water" />
+            </label>
+
+            <label class="checklist-item" for="task-food">
+              <span class="item-emoji">🥗</span>
+              <div class="checklist-item-info">
+                <span class="item-title">تناول طعام صحي</span>
+                <span class="item-desc">وجبة متوازنة على الأقل</span>
+              </div>
+              <input type="checkbox" id="task-food" />
+            </label>
+
+            <label class="checklist-item" for="task-screen">
+              <span class="item-emoji">📵</span>
+              <div class="checklist-item-info">
+                <span class="item-title">استراحة من الشاشات</span>
+                <span class="item-desc">٢٠ دقيقة بعيداً عن الهاتف</span>
+              </div>
+              <input type="checkbox" id="task-screen" />
+            </label>
+
+            <label class="checklist-item" for="task-move">
+              <span class="item-emoji">🚶</span>
+              <div class="checklist-item-info">
+                <span class="item-title">التحرك والنشاط</span>
+                <span class="item-desc">مشية أو تمرين خفيف ولو ١٠ دقائق</span>
+              </div>
+              <input type="checkbox" id="task-move" />
+            </label>
+
+            <label class="checklist-item" for="task-breath">
+              <span class="item-emoji">🌬️</span>
+              <div class="checklist-item-info">
+                <span class="item-title">تمرين التنفس العميق</span>
+                <span class="item-desc">٥ دقائق تنفس واعٍ لتهدئة الأعصاب</span>
+              </div>
+              <input type="checkbox" id="task-breath" />
+            </label>
+
+            <label class="checklist-item" for="task-kind">
+              <span class="item-emoji">💖</span>
+              <div class="checklist-item-info">
+                <span class="item-title">فعل لطف واحد</span>
+                <span class="item-desc">للنفس أو لأحد من حولك</span>
+              </div>
+              <input type="checkbox" id="task-kind" />
+            </label>
+
+            <label class="checklist-item" for="task-grateful">
+              <span class="item-emoji">🌟</span>
+              <div class="checklist-item-info">
+                <span class="item-title">كتابة شيء ممتنة له</span>
+                <span class="item-desc">سجّلي نعمة واحدة على الأقل</span>
+              </div>
+              <input type="checkbox" id="task-grateful" />
+            </label>
+
+            <label class="checklist-item" for="task-sleep">
+              <span class="item-emoji">😴</span>
+              <div class="checklist-item-info">
+                <span class="item-title">النوم في وقت مناسب</span>
+                <span class="item-desc">هدفي ٨ ساعات نوم مريح</span>
+              </div>
+              <input type="checkbox" id="task-sleep" />
+            </label>
+
+            <!-- Progress -->
+            <div class="checklist-progress">
+              <div class="progress-label">
+                <span>تقدّمي اليوم</span>
+                <span id="checklist-progress-label">٠ / ٨ مهمة</span>
+              </div>
+              <div class="progress-bar-custom">
+                <div class="progress-fill" id="checklist-progress-fill" style="width:0%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-pad-sm" aria-labelledby="mh-cta-title">
+  <div class="container" data-animate>
+    <div class="cta-block">
+      <h2 id="mh-cta-title">لديكِ ما تريدين البوح به؟ 💙</h2>
+      <p>مساحتنا آمنة تماماً وخالية من الأحكام — كلامك يصل لمن يهتم.</p>
+      <a href="share.html" class="btn-cta-white">شاركينا 🌸</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="main-footer" role="contentinfo">
+  <div class="container text-center">
+    <div class="footer-logo-ring" aria-hidden="true">🌸</div>
+    <p class="footer-school-name">مدرسة قنا الفنية التجارية بنات</p>
+    <hr class="footer-divider" />
+ <p class="footer-specialist text-light fw-bold">تم عمل الموقع بواسطة الاخصائية النفسية /منال عمران</p>
+       <p class="footer-copy mb-1">&copy; <span id="footer-year">2025</span> جميع الحقوق محفوظة</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/mental-health.js"></script>
+</body>
+</html>

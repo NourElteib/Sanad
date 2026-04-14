@@ -1,0 +1,170 @@
+/* mental-health.css — Mental Health Page Styles */
+
+/* ── Filter Tabs / Pills ── */
+.filter-pills-wrapper {
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--radius-pill);
+  padding: 0.35rem;
+  display: inline-flex;
+  gap: 0.25rem;
+}
+
+.filter-pill {
+  border: none;
+  background: transparent;
+  border-radius: var(--radius-pill);
+  padding: 0.45rem 1.3rem;
+  font-family: var(--font-main);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--clr-text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.filter-pill:hover { color: var(--clr-primary); }
+.filter-pill.active {
+  background: linear-gradient(135deg, var(--clr-primary), var(--clr-primary-dark));
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(155,143,196,0.35);
+}
+
+/* ── Content Cards Grid ── */
+.content-card {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--clr-border);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  transition: var(--transition);
+  height: 100%;
+  background: var(--clr-surface);
+}
+.content-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); }
+
+.content-card-img {
+  height: 140px;
+  display: grid;
+  place-items: center;
+  font-size: 4rem;
+}
+
+.content-card-body { padding: 1.25rem; }
+.content-card-body .cat-pill {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2em 0.85em;
+  border-radius: var(--radius-pill);
+  display: inline-block;
+  margin-bottom: 0.65rem;
+}
+.cat-mental { background: var(--clr-secondary-light); color: #2a7d8c; }
+.cat-confidence { background: var(--clr-primary-light); color: var(--clr-primary-dark); }
+
+.content-card-body h5 { font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
+.content-card-body p  { font-size: 0.85rem; color: var(--clr-text-muted); margin-bottom: 0.75rem; }
+.content-card-body .card-date { font-size: 0.78rem; color: var(--clr-text-muted); }
+
+/* ── Daily Checklist ── */
+.checklist-section { background: linear-gradient(135deg, #f8f5ff, #f0fdf9); }
+
+.checklist-wrapper {
+  background: var(--clr-surface);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--clr-border);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.checklist-header {
+  background: linear-gradient(135deg, var(--clr-primary), var(--clr-primary-dark));
+  color: #fff;
+  padding: 1.5rem 2rem;
+}
+.checklist-header h3 { font-size: 1.2rem; font-weight: 800; margin: 0; }
+.checklist-header p  { font-size: 0.85rem; opacity: 0.8; margin: 0.25rem 0 0; }
+
+.checklist-body { padding: 1.5rem 2rem; }
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--clr-border);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.checklist-item:last-child { border-bottom: none; }
+.checklist-item:hover { background: var(--clr-bg); margin: 0 -2rem; padding: 1rem 2rem; border-radius: var(--radius-md); }
+
+.checklist-item input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--clr-primary-light);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--transition);
+  flex-shrink: 0;
+  position: relative;
+}
+.checklist-item input[type="checkbox"]:checked {
+  background: linear-gradient(135deg, var(--clr-primary), var(--clr-primary-dark));
+  border-color: var(--clr-primary);
+}
+.checklist-item input[type="checkbox"]:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.checklist-item-info { flex: 1; }
+.checklist-item-info .item-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--clr-text);
+  display: block;
+  transition: var(--transition);
+}
+.checklist-item-info .item-desc {
+  font-size: 0.8rem;
+  color: var(--clr-text-muted);
+}
+.checklist-item.checked .item-title {
+  text-decoration: line-through;
+  color: var(--clr-text-muted);
+}
+
+.checklist-item .item-emoji { font-size: 1.4rem; }
+
+.checklist-progress {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--clr-border);
+}
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--clr-text);
+}
+.progress-bar-custom {
+  height: 8px;
+  background: var(--clr-border);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--clr-primary), var(--clr-accent));
+  border-radius: var(--radius-pill);
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}

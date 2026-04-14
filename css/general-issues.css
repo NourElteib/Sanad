@@ -1,0 +1,269 @@
+/* ================= إعدادات عامة والخطوط ================= */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #fbfbf9; /* لون خلفية الصفحة الأساسي (أوف وايت مريح) */
+    color: #1a1a1a;
+}
+
+/* ================= قسم الهيرو (أعلى الصفحة) ================= */
+.page-hero {
+    background-color: #f0f2fa; /* درجة البنفسجي/الأزرق الفاتح جداً زي الصورة */
+    padding: 5rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #e6eaf5;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #e8ebf8;
+    color: #4a63e0;
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    border: 1px solid #d2dcf5;
+}
+
+/* بادج الهيرو الخاص (قضايا عامة) */
+.page-hero .eyebrow {
+    background-color: #fcf0f4;
+    color: #d32f2f;
+    border: 1px solid #fae1e8;
+}
+
+.heading {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-weight: 800;
+    color: #111424;
+    margin-bottom: 0.5rem;
+}
+
+.rule {
+    height: 4px;
+    width: 60px;
+    background-color: #b0b8db;
+    border-radius: 4px;
+    margin: 1.5rem 0;
+}
+
+.rule-center {
+    margin: 1.5rem auto;
+}
+
+.subheading {
+    font-size: 1.1rem;
+    color: #6c757d;
+    max-width: 600px;
+}
+
+/* ================= كارت المبادرة الرئيسي ================= */
+.section {
+    padding: 4rem 0;
+}
+
+.initiative-card {
+    background-color: #f7f7f4; /* خلفية الكارت البيج الفاتح زي الصورة */
+    border: 1px solid #ebebe9;
+    border-radius: 24px;
+    padding: 2.5rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+
+.init-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+/* بادج (توعية ووقاية) الأخضر */
+.init-badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e6f6eb;
+    color: #1c7c44;
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border: 1px solid #c2e8cf;
+}
+
+.init-title {
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.init-subtitle {
+    color: #555;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4a63e0; /* لون أزرق للعنوان الفرعي */
+    margin-bottom: 1.5rem;
+}
+
+/* مربع الاقتباس الملون (لأن الوقاية دائماً...) */
+.init-quote {
+    background-color: #faebee; /* خلفية بينك فاتح */
+    color: #d32f2f;
+    padding: 1.2rem 1.5rem;
+    border-radius: 12px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border-right: 4px solid #d32f2f; /* حافة حمراء يمين */
+    margin: 2rem 0;
+    line-height: 1.6;
+}
+
+/* صورة المبادرة */
+.im img {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border: 1px solid #e0e0e0;
+}
+
+/* جزء المتحدث والتفاصيل */
+.speaker-row {
+    margin-top: 2rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid #f0f0f0;
+}
+
+.speaker {
+    font-size: 1.05rem;
+    line-height: 2;
+    color: #444;
+}
+
+.init-stats {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.init-stat {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #e9ecef;
+}
+
+/* ================= شبكة النصائح (Tips Grid) ================= */
+.tips-grid {
+    display: grid;
+    /* إجبار الشبكة على عمودين في الشاشات الكبيرة، وعمود واحد في الموبايل */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tip-card {
+    display: flex;
+    gap: 1.2rem;
+    background-color: #ffffff;
+    padding: 2rem 1.8rem;
+    border-radius: 20px; /* حواف دائرية ناعمة جداً */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03); /* شادو خفيف جداً */
+    border: 1px solid #f4f5f8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: flex-start;
+}
+
+.tip-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    border-color: #ebeef5;
+}
+
+/* رقم النصيحة (الشكل المربع الجديد) */
+.tip-num {
+    background-color: #7484d0; /* درجة الأزرق/البنفسجي الهادية اللي في صورتك */
+    color: #ffffff;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px; /* هنا خلينا الشكل مربع بحواف ناعمة بدل الدائرة */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(116, 132, 208, 0.25); /* توهج خفيف بنفس لون المربع */
+}
+
+.tip-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #1a1a2e; /* كحلي غامق جداً يميل للأسود */
+    margin-bottom: 0.6rem;
+    margin-top: 0.3rem; /* تظبيط المحاذاة مع المربع */
+}
+
+.tip-text {
+    font-size: 0.95rem;
+    color: #8b92a5; /* رمادي فاتح مريح للقراءة */
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* لو حابة كارت ياخد العرض كله (زي آخر كارت في تصميمك الأولاني) */
+.tip-card-full {
+    grid-column: 1 / -1; 
+}
+/* ================= قسم الدعوة للمشاركة (CTA) ================= */
+.init-cta {
+    background: linear-gradient(135deg, #4a63e0 0%, #768bf2 100%);
+    color: white;
+    padding: 4rem 2rem;
+    border-radius: 24px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(74, 99, 224, 0.2);
+}
+
+.cta-btn {
+    background-color: white;
+    color: #4a63e0;
+    padding: 14px 36px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    color: #3b50a8;
+}
+
+/* ================= نصوص عامة ================= */
+.text-danger {
+    color: #d32f2f !important;
+}

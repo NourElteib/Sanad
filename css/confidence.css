@@ -1,0 +1,110 @@
+/* confidence.css — Self-Confidence Page Styles */
+
+/* ── Mindset Cards ── */
+.mindset-card {
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.5rem;
+  border: 1px solid var(--clr-border);
+  box-shadow: var(--shadow-soft);
+  transition: var(--transition);
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.mindset-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); }
+.mindset-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6px;
+  height: 100%;
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+}
+.mindset-card.accent-purple::before { background: var(--clr-primary); }
+.mindset-card.accent-blue::before   { background: var(--clr-secondary); }
+.mindset-card.accent-pink::before   { background: var(--clr-accent); }
+.mindset-card.accent-green::before  { background: var(--clr-green); }
+
+.mindset-card .card-number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  opacity: 0.12;
+  position: absolute;
+  left: 1.25rem;
+  top: 0.75rem;
+  line-height: 1;
+  font-family: 'Cairo', sans-serif;
+}
+.mindset-card h4 { font-size: 1rem; font-weight: 800; margin-bottom: 0.5rem; }
+.mindset-card p  { font-size: 0.87rem; color: var(--clr-text-muted); margin: 0; line-height: 1.7; }
+
+/* ── Progress Steps ── */
+.steps-timeline {
+  position: relative;
+  padding-right: 2.5rem;
+}
+.steps-timeline::before {
+  content: '';
+  position: absolute;
+  right: 1.1rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--clr-primary), var(--clr-accent));
+  border-radius: var(--radius-pill);
+}
+
+.step-item {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+  position: relative;
+  align-items: flex-start;
+}
+.step-dot {
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(135deg, var(--clr-primary), var(--clr-primary-dark));
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  position: absolute;
+  right: -2.5rem;
+  box-shadow: 0 3px 10px rgba(155,143,196,0.4);
+}
+.step-content { padding-bottom: 0.5rem; }
+.step-content h5 { font-size: 0.97rem; font-weight: 700; margin-bottom: 0.3rem; }
+.step-content p  { font-size: 0.85rem; color: var(--clr-text-muted); margin: 0; }
+
+/* ── Affirmation Banner ── */
+.affirmation-banner {
+  background: linear-gradient(135deg, var(--clr-accent-light), #fff5f7);
+  border: 1px solid var(--clr-accent-light);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  text-align: center;
+}
+.affirmation-banner .quote-marks {
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--clr-accent);
+  opacity: 0.4;
+  display: block;
+}
+.affirmation-banner blockquote {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--clr-text);
+  margin: 0.5rem 0;
+  font-style: normal;
+  line-height: 1.6;
+}
+.affirmation-banner cite {
+  font-size: 0.85rem;
+  color: var(--clr-text-muted);
+}
